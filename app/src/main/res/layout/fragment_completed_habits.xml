@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/VerticalLinearLayout"
+    tools:context=".ui.habits.habits_completed.CompletedHabitsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/skills_rv"
+        android:visibility="gone"
+        style="@style/RecyclerViewHorizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/completed_habits_rv"
+        android:visibility="gone"
+        style="@style/RecyclerView" />
+
+    <LinearLayout
+        style="@style/VerticalLinearLayout">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/pic_innovation" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:gravity="center"
+            android:text="@string/habits_complete_empty" />
+    </LinearLayout>
+
+</LinearLayout>

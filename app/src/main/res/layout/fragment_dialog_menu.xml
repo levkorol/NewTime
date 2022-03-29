@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/VerticalLinearLayout">
+
+    <TextView
+        android:id="@+id/add_task"
+        style="@style/MenuItemTextWithDrawable"
+        android:drawableStart="@drawable/ic_tasks"
+        android:text="@string/task" />
+
+    <TextView
+        android:id="@+id/add_goal"
+        style="@style/MenuItemTextWithDrawable"
+        android:drawableStart="@drawable/ic_goal"
+        android:text="@string/goal" />
+
+    <TextView
+        android:id="@+id/add_habit"
+        style="@style/MenuItemTextWithDrawable"
+        android:drawableStart="@drawable/ic_habit"
+        android:text="@string/habit" />
+</LinearLayout>

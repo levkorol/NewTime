@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/VerticalLinearLayout"
+    tools:background="@color/bg_tools_fg"
+    tools:context=".ui.goals.goals_active.GoalActiveFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/skills_rv"
+        style="@style/RecyclerViewHorizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/active_goals_rv"
+        android:layout_weight="1"
+        style="@style/RecyclerView"/>
+
+</LinearLayout>

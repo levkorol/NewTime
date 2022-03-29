@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/VerticalLinearLayout"
+    android:background="?light"
+    tools:background="@color/bg_tools_fg"
+    tools:context=".ui.habits.adding.AddHabitFragment">
+
+    <RelativeLayout
+        android:id="@+id/top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/back"
+            style="@style/ButtonToolBar"
+            android:src="@drawable/ic_back_24" />
+
+        <TextView
+            android:id="@+id/title_toolbar"
+            style="@style/TextToolBar"
+            android:text="@string/new_habit" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/save"
+            style="@style/ButtonToolBar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_done" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/name"
+        style="@style/EditTextDesc" />
+
+    <TextView
+        android:id="@+id/date_deadline"
+        style="@style/AddOrEditFieldTextView"
+        android:drawableStart="@drawable/ic_calendar"
+        android:text="@string/count_days" />
+
+    <TextView
+        android:id="@+id/date"
+        style="@style/AddOrEditFieldTextView"
+        android:drawableStart="@drawable/ic_interval"
+        android:text="@string/interval"
+        />
+
+    <TextView
+        style="@style/AddOrEditFieldTextView"
+        android:text="@string/icon"
+        android:drawableStart="@drawable/ic_icon" />
+
+    <TextView
+        style="@style/AddOrEditFieldTextView"
+        android:text="@string/skill"
+        android:drawableStart="@drawable/ic_self" />
+
+    <EditText
+        android:id="@+id/prize"
+        style="@style/EditTextDrawableAddOrEdit"
+        android:hint="@string/prize_et"
+        android:drawableStart="@drawable/ic_price" />
+
+</LinearLayout>

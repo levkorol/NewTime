@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/VerticalLinearLayout"
+    tools:context=".ui.habits.habits_active.ActiveHabitsFragment">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/skills_rv"
+       style="@style/RecyclerViewHorizontal"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/active_habits_rv"
+       android:layout_weight="1"
+       style="@style/RecyclerView"/>
+
+</LinearLayout>

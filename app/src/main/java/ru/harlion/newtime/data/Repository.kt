@@ -23,7 +23,7 @@ class Repository private constructor(context: Context) {
         //tests
         fun getHabits() = listOf(
             Habit(1, "name habit", false),
-            Habit(1, "meditation at morning", true),
+            Habit(1, "meditation at morning meditation at morning meditation at morning meditation at morning meditation at morning", true),
             Habit(1, "name", false),
             Habit(1, "name habit", false),
             Habit(1, "meditation at morning", true),

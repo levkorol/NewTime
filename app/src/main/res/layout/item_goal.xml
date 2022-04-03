@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="16dp"
-    android:layout_marginTop="4dp"
+    android:layout_marginTop="6dp"
     android:layout_marginBottom="4dp"
     app:cardCornerRadius="10dp"
     app:cardElevation="2dp">
@@ -14,88 +14,75 @@
     <ImageView
         android:id="@+id/goal_photo"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="130dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/image_on_boarding_five" />
+        android:src="@drawable/image_on_boarding_one" />
 
     <TextView
         android:id="@+id/goal_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
         android:text="Моя цель" />
 
     <TextView
+        android:id="@+id/goal_sprints"
+        style="@style/TextViewWhithSmallIconItem"
+        android:drawableStart="@drawable/ic_rocket_lunch"
+        android:layout_marginStart="16dp"
+        android:text="Спринты 0 / 10" />
+
+    <TextView
         android:id="@+id/goal_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:drawableStart="@drawable/ic_self"
-        android:gravity="center"
-        android:text="Осталось 45 дней"
-        android:textSize="12sp" />
+        style="@style/TextViewWhithSmallIconItem"
+        android:drawableStart="@drawable/ic_calendar_"
+        android:layout_marginStart="16dp"
+        android:text="Прошло 45 / 100 дней" />
+
+    <TextView
+        android:id="@+id/goal_prize"
+        style="@style/TextViewWhithSmallIconItem"
+        android:layout_marginStart="16dp"
+        android:text="Отличный день"
+        android:drawableStart="@drawable/ic_trophy" />
+
+    <TextView
+        android:id="@+id/goal_skill"
+        style="@style/TextViewWhithSmallIconItem"
+        android:drawableStart="@drawable/ic_skill"
+        android:layout_marginStart="16dp"
+        android:text="Работа"
+        />
+
+<LinearLayout
+    style="@style/HorizontalLinearLayout"
+    android:paddingBottom="8dp">
 
     <TextView
         android:id="@+id/goal_progress_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:drawableStart="@drawable/ic_self"
-        android:gravity="center"
-        android:text="Сделано 10/25"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/goal_skill"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:drawableStart="@drawable/ic_self"
-        android:gravity="center"
-        android:text="Работа"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/goal_prize"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Отличный день"
-        android:drawableStart="@drawable/ic_price"
-        android:gravity="center"
-        android:textSize="12sp" />
-
-<LinearLayout
-    style="@style/HorizontalLinearLayout">
-    <TextView
-        android:id="@+id/goal_progress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:drawableStart="@drawable/ic_self"
-        android:gravity="center"
-        android:text="Прогресс"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/goal_tasks"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:drawableStart="@drawable/ic_tasks"
-        android:gravity="center"
-        android:text="@string/tasks"
-        android:textSize="12sp" />
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_gravity="start|center"
+        android:drawableStart="@drawable/ic_add"
+        android:gravity="center|start"
+        android:text="Прогресс 10 / 25" />
 
     <TextView
         android:id="@+id/goal_percent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:text="30/100"
-        android:textSize="12sp" />
+        android:layout_marginEnd="10dp"
+        android:gravity="end"
+        android:layout_weight="3"
+        android:textColor="@color/purple"
+        android:text="30 %" />
 </LinearLayout>
 </LinearLayout>
 </androidx.cardview.widget.CardView>

@@ -11,8 +11,10 @@ import com.google.android.material.tabs.TabLayoutMediator
 import ru.harlion.newtime.R
 import ru.harlion.newtime.base.BindingFragment
 import ru.harlion.newtime.databinding.FragmentHabitsBinding
+import ru.harlion.newtime.ui.habits.adding.AddHabitFragment
 import ru.harlion.newtime.ui.habits.habits_active.ActiveHabitsFragment
 import ru.harlion.newtime.ui.habits.habits_completed.CompletedHabitsFragment
+import ru.harlion.newtime.utils.replaceFragment
 
 
 class HabitsFragment : BindingFragment<FragmentHabitsBinding>(FragmentHabitsBinding::inflate) {
@@ -32,6 +34,10 @@ class HabitsFragment : BindingFragment<FragmentHabitsBinding>(FragmentHabitsBind
                 }
             }
         }.attach()
+
+        binding.addBtn.setOnClickListener {
+            replaceFragment(AddHabitFragment(), true)
+        }
     }
 
     class HabitsViewPager(fragmentManager: FragmentManager, lifecycle: Lifecycle) :

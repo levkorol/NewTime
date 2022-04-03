@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="16dp"
-    android:layout_marginTop="4dp"
+    android:layout_marginTop="6dp"
     android:layout_marginBottom="4dp"
     app:cardCornerRadius="10dp"
     app:cardElevation="2dp">
@@ -19,15 +19,22 @@
                 android:id="@+id/habit_icon"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:layout_marginStart="4dp"
                 android:src="@drawable/ic_big_smile"
                 android:tint="@color/light_orange" />
 
             <TextView
                 android:id="@+id/habit_name"
                 style="@style/TextNormal"
-                android:layout_weight="1"
                 android:layout_marginTop="4dp"
+                android:layout_weight="1"
                 android:text="Бегать по утрам" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 %"
+                android:textColor="@color/orange" />
 
             <ImageView
                 android:id="@+id/habit_arrow"
@@ -39,33 +46,25 @@
 
         <TextView
             android:id="@+id/habit_skill"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:drawableStart="@drawable/ic_self"
-            android:gravity="center"
+            style="@style/TextViewWhithSmallIconItem"
+            android:drawableStart="@drawable/ic_skill"
             android:text="Работа"
             android:textSize="12sp" />
 
         <TextView
             android:id="@+id/habit_prize"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Отличный день"
-            android:drawableStart="@drawable/ic_price"
-            android:gravity="center"
-            android:textSize="12sp" />
+            style="@style/TextViewWhithSmallIconItem"
+            android:drawableStart="@drawable/ic_trophy"
+            android:text="Отличный день" />
 
         <CheckedTextView
             android:id="@+id/habit_check_box"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:checkMark="@drawable/selector_check_box"
-            android:text="5/10 дней"
-            android:textSize="12sp" />
+            android:text="5/10 дней" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

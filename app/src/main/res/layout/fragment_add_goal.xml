@@ -33,35 +33,35 @@
     <TextView
         android:id="@+id/date_deadline"
         style="@style/AddOrEditFieldTextView"
-        android:drawableStart="@drawable/ic_calendar"
+        android:drawableStart="@drawable/ic_measure"
         android:text="@string/unit" />
 
     <TextView
         android:id="@+id/date"
         style="@style/AddOrEditFieldTextView"
-        android:drawableStart="@drawable/ic_interval"
+        android:drawableStart="@drawable/ic_tachometer_fastest"
         android:text="@string/measure"
         />
     <TextView
         android:id="@+id/dat"
         style="@style/AddOrEditFieldTextView"
-        android:drawableStart="@drawable/ic_calendar"
+        android:drawableStart="@drawable/ic_calendar_"
         android:text="@string/deadline" />
 
     <TextView
         style="@style/AddOrEditFieldTextView"
         android:text="@string/icon"
-        android:drawableStart="@drawable/ic_icon" />
+        android:drawableStart="@drawable/ic_flower" />
 
     <TextView
         style="@style/AddOrEditFieldTextView"
         android:text="@string/skill"
-        android:drawableStart="@drawable/ic_self" />
+        android:drawableStart="@drawable/ic_skill" />
 
     <EditText
         android:id="@+id/prize"
         style="@style/EditTextDrawableAddOrEdit"
         android:hint="@string/prize_et"
-        android:drawableStart="@drawable/ic_price" />
+        android:drawableStart="@drawable/ic_trophy" />
 
 </LinearLayout>

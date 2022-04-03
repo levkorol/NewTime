@@ -35,34 +35,34 @@
 
     <TextView
         style="@style/AddOrEditFieldTextView"
-        android:drawableStart="@drawable/ic_calendar"
+        android:drawableStart="@drawable/ic_calendar_"
         android:text="@string/date" />
 
     <TextView
         style="@style/AddOrEditFieldTextView"
-        android:drawableStart="@drawable/ic_calendar"
+        android:drawableStart="@drawable/ic_time_oclock"
         android:text="@string/time" />
 
     <TextView
         style="@style/AddOrEditFieldTextView"
         android:text="@string/priority"
-        android:drawableStart="@drawable/ic_icon" />
+        android:drawableStart="@drawable/ic_flag" />
 
     <TextView
         style="@style/AddOrEditFieldTextView"
-        android:drawableStart="@drawable/ic_interval"
+        android:drawableStart="@drawable/ic_rotate"
         android:text="@string/repeat"
         />
 
     <TextView
         style="@style/AddOrEditFieldTextView"
         android:text="@string/alarm"
-        android:drawableStart="@drawable/ic_self" />
+        android:drawableStart="@drawable/ic_alarm" />
 
     <TextView
         style="@style/AddOrEditFieldTextView"
         android:text="@string/skill"
-        android:drawableStart="@drawable/ic_self" />
+        android:drawableStart="@drawable/ic_skill" />
 
 
 </LinearLayout>

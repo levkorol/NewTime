@@ -73,10 +73,11 @@
         <item name="android:layout_marginEnd">16dp</item>
         <item name="android:layout_marginTop">16dp</item>
         <item name="android:background">@drawable/bg_white</item>
-        <item name="android:drawablePadding">8dp</item>
-        <item name="android:drawableEnd">@drawable/ic_arrow_down</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:drawableEnd">@drawable/ic_angle_small_down</item>
         <item name="android:gravity">start|center</item>
-        <item name="android:padding">8dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:paddingStart">14dp</item>
     </style>
 
     <style name="EditTextFieldsAddOrEdit">
@@ -99,7 +100,19 @@
         <item name="android:layout_marginTop">16dp</item>
         <item name="android:gravity">center|start</item>
         <item name="android:lines">1</item>
-        <item name="android:drawablePadding">8dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="TextViewWhithSmallIconItem">
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center|start</item>
     </style>
 
     <!--    bottom_menu-->
@@ -184,6 +197,30 @@
         <item name="middle">#C69624</item>
         <item name="middle_d">#8A7647</item>
         <item name="middle_l">#AFA385</item>
+    </style>
+
+    <style name="VioletTheme">
+        <item name="light">#F1EAFA</item>
+        <item name="darker">#180735</item>
+        <item name="middle">#552797</item>
+        <item name="middle_d">#685097</item>
+        <item name="middle_l">#87779C</item>
+    </style>
+
+    <style name="SeaTheme">
+        <item name="light">#EDFAF8</item>
+        <item name="darker">#0E393A</item>
+        <item name="middle">#319A8E</item>
+        <item name="middle_d">#5C9F9F</item>
+        <item name="middle_l">#87A6A2</item>
+    </style>
+
+    <style name="PinkTheme">
+        <item name="light">#F8ECFA</item>
+        <item name="darker">#390E3A</item>
+        <item name="middle">#9A3198</item>
+        <item name="middle_d">#9B5C9F</item>
+        <item name="middle_l">#A687A3</item>
     </style>
     <!--    themes-->
 

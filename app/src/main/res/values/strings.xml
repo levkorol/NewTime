@@ -36,4 +36,20 @@
     <string name="comleted">Достигнутые</string>
     <string name="goals_complete_empty">Достигнутых целей пока нет...</string>
     <string name="habits_complete_empty">Выработанных привычек пока нет...</string>
+    <string name="premium">ПРЕМИУМ</string>
+    <string name="pro_sprints">Создавайте спринты к целям</string>
+    <string name="pro_statistic">Подробная статистика твоих достижений</string>
+    <string name="pro_motivation">Платность - мотивация к выполнению</string>
+    <string name="pro_sygnal">Будильники к задачам</string>
+    <string name="pro_theme">Больше цветовых оформлений</string>
+    <string name="without_date">Без рекламы</string>
+    <string name="pro_data">Резервоное копирование</string>
+    <string name="pro_settings">Настройки</string>
+    <string name="buy">Приобрести</string>
+    <string name="newfocus">NewFocus - будь в фокусе</string>
+    <string name="menu_data">Резервное копирование</string>
+    <string name="menu_star">Поставьте нам оценку</string>
+    <string name="menu_statistic">Статистика</string>
+    <string name="menu_lock">Пароль на вход</string>
+    <string name="menu_premium">Премиум</string>
 </resources>

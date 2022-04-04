@@ -90,8 +90,8 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:paddingTop="8dp"
-        android:text="cегодня                                                                        месяц"
-        android:textColor="@color/green" />
+        android:text="Сегодня                                                                        Месяц"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/tasks_recycler_view"

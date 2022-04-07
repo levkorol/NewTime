@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/VerticalLinearLayout"
     tools:background="@color/bg_tools_fg"
     tools:context=".ui.profile.ProfileFragment">
 
+    <LinearLayout
+        style="@style/VerticalLinearLayout">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,29 +18,53 @@
         <TextView
             style="@style/TextTitle"
             android:gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:layout_width="match_parent"
-            android:text="Сферы жизни инфа ред"/>
+            android:drawableStart="@drawable/ic_info"
+            android:drawableEnd="@drawable/ic_edit"
+            android:text="Сферы жизни"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            style="@style/TextCategoryProfile"
+            android:text="Личная жизнь 1/100"/>
 
         <SeekBar
             android:layout_width="match_parent"
-            android:layout_height="35dp"/>
+            android:layout_height="30dp"/>
+
+        <TextView
+            style="@style/TextCategoryProfile"
+            android:text="Здоровье 1/100"/>
         <SeekBar
             android:layout_width="match_parent"
-            android:layout_height="35dp"/>
+            android:layout_height="30dp"/>
+
+        <TextView
+            style="@style/TextCategoryProfile"
+            android:text="Работа 1/100"/>
         <SeekBar
             android:layout_width="match_parent"
-            android:layout_height="35dp"/>
+            android:layout_height="30dp"/>
+
+        <TextView
+            style="@style/TextCategoryProfile"
+            android:text="Саморазвитие 1/100"/>
         <SeekBar
             android:layout_width="match_parent"
-            android:layout_height="35dp"/>
+            android:layout_height="30dp"/>
+        <TextView
+            style="@style/TextCategoryProfile"
+            android:text="Отдых 1/100"/>
         <SeekBar
             android:layout_width="match_parent"
-            android:layout_height="35dp"/>
+            android:layout_height="30dp"/>
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_weight="1">
+            >
 
             <com.github.mikephil.charting.charts.RadarChart
                 android:id="@+id/radarChart"
@@ -84,7 +110,11 @@
             android:text="@string/newfocus"
             android:drawableStart="@drawable/ic_time_oclock"/>
 
-
+        <TextView
+            style="@style/MenuItemProfile"
+            android:text="@string/pro_settings"
+            android:drawableStart="@drawable/ic_settings"/>
+    </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

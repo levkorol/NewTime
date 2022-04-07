@@ -1,11 +1,28 @@
 package ru.harlion.newtime.data
 
 import android.content.Context
+import androidx.room.Room
 import ru.harlion.newtime.models.Goal
 import ru.harlion.newtime.models.Habit
 import ru.harlion.newtime.models.Task
+import java.util.concurrent.Executors
 
+
+private const val DATABASE_NAME = "new_time-database"
 class Repository private constructor(context: Context) {
+
+    private val database: DataBaseApp = Room.databaseBuilder(
+        context.applicationContext,
+        DataBaseApp::class.java,
+        DATABASE_NAME
+    ).allowMainThreadQueries()
+        .build()
+
+    private val projectDao = database.goalDao()
+    private val taskDao = database.taskDao()
+    private val habitDao = database.habitDao()
+    private val executor = Executors.newSingleThreadExecutor()
+
 
     companion object {
         private var INSTANCE: Repository? = null

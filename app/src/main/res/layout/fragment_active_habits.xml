@@ -6,6 +6,7 @@
 
    <androidx.recyclerview.widget.RecyclerView
        android:id="@+id/skills_rv"
+       android:paddingStart="10dp"
        style="@style/RecyclerViewHorizontal"/>
 
    <androidx.recyclerview.widget.RecyclerView

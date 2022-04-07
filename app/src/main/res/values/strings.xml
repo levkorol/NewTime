@@ -53,4 +53,5 @@
     <string name="menu_lock">Пароль на вход</string>
     <string name="menu_premium">Премиум</string>
     <string name="add">СОЗДАТЬ</string>
+    <string name="habits_today_empty">Привычек сегодня нет...</string>
 </resources>

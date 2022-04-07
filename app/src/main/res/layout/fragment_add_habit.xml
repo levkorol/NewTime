@@ -4,7 +4,7 @@
     style="@style/VerticalLinearLayout"
     android:background="?light"
     tools:background="@color/bg_tools_fg"
-    tools:context=".ui.habits.adding.AddHabitFragment">
+    tools:context=".ui.habits.add_or_edit.AddHabitFragment">
 
     <RelativeLayout
         android:id="@+id/top_ll"
@@ -35,24 +35,26 @@
         style="@style/EditTextDesc" />
 
     <TextView
-        android:id="@+id/date_deadline"
+        android:id="@+id/count_days"
         style="@style/AddOrEditFieldTextView"
         android:drawableStart="@drawable/ic_calendar_"
         android:text="@string/count_days" />
 
     <TextView
-        android:id="@+id/date"
+        android:id="@+id/interval"
         style="@style/AddOrEditFieldTextView"
         android:drawableStart="@drawable/ic_rotate"
         android:text="@string/interval"
         />
 
     <TextView
+        android:id="@+id/icon"
         style="@style/AddOrEditFieldTextView"
         android:text="@string/icon"
         android:drawableStart="@drawable/ic_flower" />
 
     <TextView
+        android:id="@+id/skill"
         style="@style/AddOrEditFieldTextView"
         android:text="@string/skill"
         android:drawableStart="@drawable/ic_skill" />

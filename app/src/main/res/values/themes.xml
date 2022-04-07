@@ -6,7 +6,7 @@
         <item name="colorPrimaryVariant">?middle_d</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">?middle</item>
+        <item name="colorSecondary">@color/green</item>
         <item name="colorSecondaryVariant">?middle</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
@@ -241,6 +241,22 @@
     </style>
     <!--    themes-->
 
+    <style name="CategoryCheckedTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_category</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/checkable_btn</item>
+        <item name="android:textAlignment">center</item>
 
+    </style>
+
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">?middle_l</item>
+        <item name="android:progressTint">?middle_d</item>
+        <item name="android:thumbTint">?middle_d</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
 
 </resources>

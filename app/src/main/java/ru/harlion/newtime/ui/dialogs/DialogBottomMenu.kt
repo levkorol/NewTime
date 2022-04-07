@@ -8,8 +8,6 @@ import androidx.fragment.app.setFragmentResult
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import ru.harlion.newtime.R
 import ru.harlion.newtime.databinding.FragmentDialogMenuBinding
-import ru.harlion.newtime.ui.goals.adding.AddGoalFragment
-import ru.harlion.newtime.utils.replaceFragment
 
 class DialogBottomMenu: BottomSheetDialogFragment() {
 

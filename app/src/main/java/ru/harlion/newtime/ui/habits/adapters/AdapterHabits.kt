@@ -28,7 +28,7 @@ class AdapterHabits :
             habitArrow
             habitPrize
             habitSkill.text = items[position].name
-            habitCheckBox.isChecked = items[position].checked
+            habitCheckBox.isChecked = items[position].checkedToday
 
 
         }

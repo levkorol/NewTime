@@ -1,4 +1,4 @@
-package ru.harlion.newtime.ui.tasks.adding
+package ru.harlion.newtime.ui.tasks.add_or_edit
 
 import androidx.lifecycle.ViewModel
 

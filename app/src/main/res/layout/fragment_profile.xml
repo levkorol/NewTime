@@ -31,35 +31,30 @@
             android:text="Личная жизнь 1/100"/>
 
         <SeekBar
-            android:layout_width="match_parent"
-            android:layout_height="30dp"/>
+            style="@style/MySeekBar" />
 
         <TextView
             style="@style/TextCategoryProfile"
             android:text="Здоровье 1/100"/>
         <SeekBar
-            android:layout_width="match_parent"
-            android:layout_height="30dp"/>
+            style="@style/MySeekBar"/>
 
         <TextView
             style="@style/TextCategoryProfile"
             android:text="Работа 1/100"/>
         <SeekBar
-            android:layout_width="match_parent"
-            android:layout_height="30dp"/>
+            style="@style/MySeekBar"/>
 
         <TextView
             style="@style/TextCategoryProfile"
             android:text="Саморазвитие 1/100"/>
         <SeekBar
-            android:layout_width="match_parent"
-            android:layout_height="30dp"/>
+            style="@style/MySeekBar"/>
         <TextView
             style="@style/TextCategoryProfile"
             android:text="Отдых 1/100"/>
         <SeekBar
-            android:layout_width="match_parent"
-            android:layout_height="30dp"/>
+            style="@style/MySeekBar"/>
 
         <FrameLayout
             android:layout_width="match_parent"

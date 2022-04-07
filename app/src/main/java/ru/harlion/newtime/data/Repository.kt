@@ -4,11 +4,13 @@ import android.content.Context
 import androidx.room.Room
 import ru.harlion.newtime.models.Goal
 import ru.harlion.newtime.models.Habit
+import ru.harlion.newtime.models.Skill
 import ru.harlion.newtime.models.Task
 import java.util.concurrent.Executors
 
 
 private const val DATABASE_NAME = "new_time-database"
+
 class Repository private constructor(context: Context) {
 
     private val database: DataBaseApp = Room.databaseBuilder(
@@ -24,6 +26,16 @@ class Repository private constructor(context: Context) {
     private val executor = Executors.newSingleThreadExecutor()
 
 
+    fun addHabit(habit: Habit) {
+        executor.execute {
+            habitDao.addHabit(habit)
+        }
+    }
+
+    fun getHabits(): List<Habit> {
+        return habitDao.getHabits()
+    }
+
     companion object {
         private var INSTANCE: Repository? = null
 
@@ -37,16 +49,6 @@ class Repository private constructor(context: Context) {
             return INSTANCE ?: throw IllegalStateException("Repository must be init")
         }
 
-        //tests
-        fun getHabits() = listOf(
-            Habit(1, "name habit", false),
-            Habit(1, "meditation at morning meditation at morning meditation at morning meditation at morning meditation at morning", true),
-            Habit(1, "name", false),
-            Habit(1, "name habit", false),
-            Habit(1, "meditation at morning", true),
-            Habit(1, "name", false),
-        )
-
         fun getTasks() = listOf(
             Task(1, "task 1", false),
             Task(1, "task 2", false),
@@ -59,16 +61,24 @@ class Repository private constructor(context: Context) {
             Task(1, "task 3", false),
         )
 
-        fun getGoals() = listOf(
-            Goal(1, "Цель", 1,1, "",1,1,"","", listOf()),
-            Goal(1, "Цель", 1,1, "",1,1,"","", listOf()),
-            Goal(1, "Цель", 1,1, "",1,1,"","", listOf()),
-            Goal(1, "Цель", 1,1, "",1,1,"","", listOf()),
-            Goal(1, "Цель", 1,1, "",1,1,"","", listOf()),
-            Goal(1, "Цель", 1,1, "",1,1,"","", listOf()),
-            Goal(1, "Цель", 1,1, "",1,1,"","", listOf()),
-            Goal(1, "Цель", 1,1, "",1,1,"","", listOf()),
-            Goal(1, "Цель", 1,1, "",1,1,"","", listOf())
+        fun getGoals() = listOf<Goal>(
+//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
+//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
+//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
+//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
+//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
+//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
+//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
+//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
+//            Goal(1, "Цель", 1, 1, "", 1, 1, "", "")
+        )
+
+        fun getSkill() = listOf(
+            Skill(1, "Работа"),
+            Skill(1, "Здоровье"),
+            Skill(1, "Карьера"),
+            Skill(1, "Отдых"),
+            Skill(1, "Личная жизнь"),
         )
     }
 }

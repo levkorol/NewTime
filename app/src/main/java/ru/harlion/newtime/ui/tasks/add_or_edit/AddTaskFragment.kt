@@ -1,12 +1,12 @@
-package ru.harlion.newtime.ui.goals.adding
+package ru.harlion.newtime.ui.tasks.add_or_edit
 
 
 import ru.harlion.newtime.AppActivity
 import ru.harlion.newtime.base.BindingFragment
-import ru.harlion.newtime.databinding.FragmentAddGoalBinding
+import ru.harlion.newtime.databinding.FragmentAddTaskBinding
 
 
-class AddGoalFragment : BindingFragment<FragmentAddGoalBinding>(FragmentAddGoalBinding::inflate) {
+class AddTaskFragment : BindingFragment<FragmentAddTaskBinding>(FragmentAddTaskBinding::inflate) {
 
     override fun onStart() {
         super.onStart()

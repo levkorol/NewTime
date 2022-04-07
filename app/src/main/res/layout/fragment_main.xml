@@ -44,9 +44,24 @@
     </RelativeLayout>
 
     <TextView
+        android:id="@+id/text_empty_habits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="26dp"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_mug_hot"
+        android:text="@string/habits_today_empty"/>
+
+    <TextView
+        android:id="@+id/title_habits"
         style="@style/TextNormal"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
+        android:visibility="gone"
+        tools:visibility="visible"
         android:text="@string/habits" />
 
     <ProgressBar
@@ -58,6 +73,8 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="4dp"
         android:progress="40"
+        android:visibility="gone"
+        tools:visibility="visible"
         android:progressDrawable="@drawable/progress_bar_habit" />
 
 
@@ -90,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:paddingTop="8dp"
-        android:text="Сегодня                                                                        Месяц"
+        android:text="Сегодня                        Месяц                           Спринты"
         />
 
     <androidx.recyclerview.widget.RecyclerView

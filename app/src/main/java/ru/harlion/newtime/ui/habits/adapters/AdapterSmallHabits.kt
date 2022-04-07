@@ -7,8 +7,8 @@ import ru.harlion.newtime.databinding.ItemSmallHabitsBinding
 import ru.harlion.newtime.models.Habit
 
 private typealias ItemHolderSmallHabits = BindingHolder<ItemSmallHabitsBinding>
-//private val clickDone: (Long) -> Unit
-class AdapterSmallHabits() :
+
+class AdapterSmallHabits :
     RecyclerView.Adapter<ItemHolderSmallHabits>() {
 
     var items: List<Habit> = listOf()
@@ -25,7 +25,7 @@ class AdapterSmallHabits() :
     override fun onBindViewHolder(holder: ItemHolderSmallHabits, position: Int) {
        holder.binding.apply {
            habitName.text = items[position].name
-           habitCheckBox.isChecked = items[position].checked
+           habitCheckBox.isChecked = items[position].checkedToday
        }
     }
 

@@ -15,4 +15,21 @@
         android:layout_weight="1"
         style="@style/RecyclerView"/>
 
+    <LinearLayout
+        android:id="@+id/list_empty"
+        android:visibility="gone"
+        style="@style/VerticalLinearLayout">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/pick_resting" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:gravity="center"
+            android:text="@string/there_empty" />
+    </LinearLayout>
+
 </LinearLayout>

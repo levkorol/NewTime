@@ -6,14 +6,11 @@ import androidx.room.PrimaryKey
 @Entity
 class Goal (
     @PrimaryKey(autoGenerate = true)
-    val id : Long,
+    val id : Long = 0,
     val name: String,
     val createDate: Long,
     val deadline : Long,
-    val dateStart : Long,
-    val dateEnd : Long,
-    val category : String,
-    val unit : Int, //единица измерения
+    val unit : String, //единица измерения
     val measure: Int, // мера
     val image: String,
     val prize: String,

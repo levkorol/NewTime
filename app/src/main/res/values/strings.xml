@@ -4,6 +4,7 @@
     <string name="main">Главная</string>
     <string name="goals">Цели</string>
     <string name="tasks">Задачи</string>
+    <string name="tasks_today">Задачи сегодня</string>
     <string name="habits">Привычки</string>
     <string name="profile">Профиль</string>
     <string name="on_boarding_one">Дорогой пользователь, добро пожаловать в NewTime! Готов к новым достижениям и улучшению качества жизни? Тогда погнали!</string>
@@ -54,4 +55,6 @@
     <string name="menu_premium">Премиум</string>
     <string name="add">СОЗДАТЬ</string>
     <string name="habits_today_empty">Привычек сегодня нет...</string>
+    <string name="save">Сохранить</string>
+    <string name="there_empty">Здесь пока пусто...</string>
 </resources>

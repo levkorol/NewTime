@@ -201,7 +201,7 @@
     </style>
 
     <style name="SkyTheme">
-        <item name="light">#DEECF2</item> <!--bg-->
+        <item name="light">#EEF6FA</item> <!--bg-->
         <item name="darker">#0E2B3A</item> <!--notify-->
         <item name="middle">#31719A</item> <!--icon toolbar back and save-->
         <item name="middle_d">#5C859F</item>

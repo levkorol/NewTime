@@ -20,7 +20,7 @@ class Repository private constructor(context: Context) {
     ).allowMainThreadQueries()
         .build()
 
-    private val projectDao = database.goalDao()
+    private val goalDao = database.goalDao()
     private val taskDao = database.taskDao()
     private val habitDao = database.habitDao()
     private val executor = Executors.newSingleThreadExecutor()
@@ -36,6 +36,16 @@ class Repository private constructor(context: Context) {
         return habitDao.getHabits()
     }
 
+    fun addGoal(goal : Goal) {
+        executor.execute {
+            goalDao.addGoal(goal)
+        }
+    }
+
+    fun getGoals(): List<Goal> {
+        return goalDao.getGoals()
+    }
+
     companion object {
         private var INSTANCE: Repository? = null
 
@@ -49,28 +59,8 @@ class Repository private constructor(context: Context) {
             return INSTANCE ?: throw IllegalStateException("Repository must be init")
         }
 
-        fun getTasks() = listOf(
-            Task(1, "task 1", false),
-            Task(1, "task 2", false),
-            Task(1, "task 3", false),
-            Task(1, "task 1", false),
-            Task(1, "task 2", false),
-            Task(1, "task 3", false),
-            Task(1, "task 1", false),
-            Task(1, "task 2", false),
-            Task(1, "task 3", false),
-        )
+        fun getTasks() = listOf<Task>(
 
-        fun getGoals() = listOf<Goal>(
-//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
-//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
-//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
-//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
-//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
-//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
-//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
-//            Goal(1, "Цель", 1, 1, "", 1, 1, "", ""),
-//            Goal(1, "Цель", 1, 1, "", 1, 1, "", "")
         )
 
         fun getSkill() = listOf(

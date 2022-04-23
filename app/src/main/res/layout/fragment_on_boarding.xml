@@ -34,7 +34,7 @@
         android:layout_marginBottom="16dp"
         app:dotsSpacing="4dp"
         app:dotsWidthFactor="2.5"
-        app:selectedDotColor="@color/green"
+        app:selectedDotColor="?middle_d"
         app:progressMode="true"
         />
 

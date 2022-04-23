@@ -20,6 +20,7 @@
     <color name="bg_picks_empty_list">#d1d3d4</color>
 
     <color name="gray_super_light">#CECFCE</color>
+    <color name="gray_super_light2">#D8DCD8</color>
 
     <color name="gray_dark_30">#4D302B31</color>
     <color name="gray_dark_90">#E6302B31</color>

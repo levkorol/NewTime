@@ -4,7 +4,7 @@
     style="@style/VerticalLinearLayout"
     android:background="?light"
     tools:background="@color/bg_tools_fg"
-    tools:context=".ui.habits.add_or_edit.AddHabitFragment">
+    tools:context=".ui.habits.edit.EditHabitFragment">
 
     <RelativeLayout
         android:id="@+id/top_ll"

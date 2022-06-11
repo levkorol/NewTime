@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/VerticalLinearLayout"
     tools:background="@color/bg_tools_fg"
-    tools:context=".ui.goals.goals_active.GoalActiveFragment">
+    tools:context=".ui.goals.list.GoalActiveFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/skills_rv"

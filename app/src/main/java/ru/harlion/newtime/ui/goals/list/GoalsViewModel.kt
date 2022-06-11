@@ -1,4 +1,4 @@
-package ru.harlion.newtime.ui.goals.goals_active
+package ru.harlion.newtime.ui.goals.list
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

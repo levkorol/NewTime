@@ -1,4 +1,4 @@
-package ru.harlion.newtime.ui.tasks.add_or_edit
+package ru.harlion.newtime.ui.tasks.edit
 
 
 import ru.harlion.newtime.AppActivity
@@ -6,7 +6,7 @@ import ru.harlion.newtime.base.BindingFragment
 import ru.harlion.newtime.databinding.FragmentAddTaskBinding
 
 
-class AddTaskFragment : BindingFragment<FragmentAddTaskBinding>(FragmentAddTaskBinding::inflate) {
+class EditTaskFragment : BindingFragment<FragmentAddTaskBinding>(FragmentAddTaskBinding::inflate) {
 
     override fun onStart() {
         super.onStart()

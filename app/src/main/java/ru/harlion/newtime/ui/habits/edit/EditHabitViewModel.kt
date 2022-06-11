@@ -1,10 +1,10 @@
-package ru.harlion.newtime.ui.habits.add_or_edit
+package ru.harlion.newtime.ui.habits.edit
 
 import androidx.lifecycle.ViewModel
 import ru.harlion.newtime.data.Repository
 import ru.harlion.newtime.models.Habit
 
-class AddHabitsViewModel : ViewModel() {
+class EditHabitViewModel : ViewModel() {
 
     private val repo = Repository.get()
 

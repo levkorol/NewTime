@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/VerticalLinearLayout"
-    tools:context=".ui.habits.habits_completed.CompletedHabitsFragment">
+    tools:context=".ui.habits.list_comleted.CompletedHabitsFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/skills_rv"

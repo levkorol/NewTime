@@ -4,7 +4,7 @@
     style="@style/VerticalLinearLayout"
     android:background="?light"
     tools:background="@color/bg_tools_fg"
-    tools:context=".ui.goals.add_or_edit.AddGoalFragment">
+    tools:context=".ui.goals.edit.EditGoalFragment">
 
     <RelativeLayout
         android:id="@+id/top_ll"

@@ -1,4 +1,4 @@
-package ru.harlion.newtime.ui.habits.habits_completed
+package ru.harlion.newtime.ui.habits.list_comleted
 
 
 import ru.harlion.newtime.base.BindingFragment

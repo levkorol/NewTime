@@ -1,4 +1,4 @@
-package ru.harlion.newtime.ui.habits.habits_active
+package ru.harlion.newtime.ui.habits.list
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

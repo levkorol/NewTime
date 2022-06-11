@@ -11,9 +11,9 @@ import com.google.android.material.tabs.TabLayoutMediator
 import ru.harlion.newtime.R
 import ru.harlion.newtime.base.BindingFragment
 import ru.harlion.newtime.databinding.FragmentGoalsBinding
-import ru.harlion.newtime.ui.goals.add_or_edit.AddGoalFragment
-import ru.harlion.newtime.ui.goals.goals_active.GoalActiveFragment
-import ru.harlion.newtime.ui.goals.goals_completed.GoalsCompletedFragment
+import ru.harlion.newtime.ui.goals.edit.EditGoalFragment
+import ru.harlion.newtime.ui.goals.list.GoalActiveFragment
+import ru.harlion.newtime.ui.goals.list_completed.GoalsCompletedFragment
 import ru.harlion.newtime.utils.replaceFragment
 
 
@@ -37,7 +37,7 @@ class GoalsFragment : BindingFragment<FragmentGoalsBinding>(FragmentGoalsBinding
         }.attach()
 
         binding.addBtn.setOnClickListener {
-            replaceFragment(AddGoalFragment(), true)
+            replaceFragment(EditGoalFragment(), true)
         }
     }
 

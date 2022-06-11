@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/VerticalLinearLayout"
-    tools:context=".ui.goals.goals_completed.GoalsCompletedFragment">
+    tools:context=".ui.goals.list_completed.GoalsCompletedFragment">
 
 
     <LinearLayout

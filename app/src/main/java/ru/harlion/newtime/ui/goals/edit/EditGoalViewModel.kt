@@ -1,4 +1,4 @@
-package ru.harlion.newtime.ui.goals.add_or_edit
+package ru.harlion.newtime.ui.goals.edit
 
 import androidx.lifecycle.ViewModel
 import ru.harlion.newtime.data.Repository

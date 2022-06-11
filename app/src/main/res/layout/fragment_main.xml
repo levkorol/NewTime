@@ -18,15 +18,11 @@
             android:layout_width="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:layout_centerInParent="true"
             android:text="Пн, 12 января"
             android:textColor="?middle_d"
             android:textStyle="bold" />
 
-        <TextView
-            style="@style/TextGraySmall"
-            android:layout_width="wrap_content"
-            android:layout_below="@+id/date"
-            android:text="5 привычек | 5 задач" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/add_btn"
@@ -62,19 +58,6 @@
         tools:visibility="visible"
         android:text="@string/habits" />
 
-    <ProgressBar
-        android:id="@+id/habits_progress_bar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="match_parent"
-        android:layout_height="8dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="4dp"
-        android:progress="40"
-        android:visibility="gone"
-        tools:visibility="visible"
-        android:progressDrawable="@drawable/progress_bar_habit" />
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/habits_recycler_view"
@@ -82,15 +65,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp" />
 
-
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginHorizontal="16dp"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:padding="8dp"-->
-<!--            android:text="Сегодня                        Месяц                           Спринты"-->
-<!--            />-->
     <TextView
         style="@style/TextNormal"
         android:layout_marginStart="16dp"

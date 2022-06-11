@@ -1,4 +1,4 @@
-package ru.harlion.newtime.ui.goals.goals_completed
+package ru.harlion.newtime.ui.goals.list_completed
 
 
 import ru.harlion.newtime.base.BindingFragment

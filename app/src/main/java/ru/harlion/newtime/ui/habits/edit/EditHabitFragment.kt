@@ -1,4 +1,4 @@
-package ru.harlion.newtime.ui.goals.add_or_edit
+package ru.harlion.newtime.ui.habits.edit
 
 
 import android.os.Bundle
@@ -6,33 +6,41 @@ import android.view.View
 import androidx.fragment.app.viewModels
 import ru.harlion.newtime.AppActivity
 import ru.harlion.newtime.base.BindingFragment
-import ru.harlion.newtime.databinding.FragmentAddGoalBinding
-import ru.harlion.newtime.utils.replaceFragment
+import ru.harlion.newtime.databinding.FragmentAddHabitBinding
 
 
-class AddGoalFragment : BindingFragment<FragmentAddGoalBinding>(FragmentAddGoalBinding::inflate) {
+class EditHabitFragment :
+    BindingFragment<FragmentAddHabitBinding>(FragmentAddHabitBinding::inflate) {
 
-    private val viewModel : EditGoalViewModel by viewModels()
+    private val viewModel: EditHabitViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         initClicks()
-
     }
 
     private fun initClicks() {
         binding.save.setOnClickListener {
-            viewModel.addGoal(
-                binding.name.text.toString(),
-                0,
-                binding.unit.text.toString(),
-                0,
-                "",
-                binding.prize.text.toString()
-            )
+            addNewHabit()
             parentFragmentManager.popBackStack()
         }
+    }
+
+    private fun addNewHabit() {
+        viewModel.addHabit(
+            binding.name.text.toString(),
+            0,
+            0,
+            0,
+            binding.prize.text.toString(),
+            binding.skill.text.toString(),
+            0
+        )
+    }
+
+    private fun editHabit() {
+
     }
 
     override fun onStart() {

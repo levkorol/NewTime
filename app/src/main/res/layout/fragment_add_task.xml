@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/VerticalLinearLayout"
     tools:background="@color/bg_tools_fg"
-    tools:context=".ui.tasks.add_or_edit.AddTaskFragment">
+    tools:context=".ui.tasks.edit.EditTaskFragment">
 
     <RelativeLayout
         android:id="@+id/top_ll"
